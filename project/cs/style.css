@@ -1,17 +1,14 @@
 :root {
-    --main-bg-color: brown;
-    --second-color: red;
-}
-
-html{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --main-bg-color: rgb(39, 39, 39);
+    --second-color: slateblue;
 }
 
 main{
     background-color: rgb(50, 50, 50);
     height: 100%;
-}
+    color: white;
 
+}
 .product{
     background-color: rgb(100, 100, 100);
     margin: 10px;
@@ -43,7 +40,7 @@ main{
 .product button{
     border: none;
     border-radius: 15px;
-    background-color: blue;
+    background-color: var(--second-color);
     color: white;
     position: relative;
     left: 50%;
@@ -70,13 +67,14 @@ main{
 
 header{
     display: inline-block;
-    background-color: blue;
+    background-color: var(--main-bg-color);
     width: 100%;
+    padding: 10px;
 }
 
 nav{
     display: inline-block;
-    background-color: lightblue;
+    background-color: var(--second-color);
     width: 100%;
 }
 
@@ -99,10 +97,11 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
+    color: white;
 }
 
 nav ul li a:hover{
-    color: rgb(0, 12, 124);
+    color: rgb(27, 27, 27);
     font-weight: bolder;
 }
 
@@ -129,10 +128,11 @@ header .searchbar input{
     width: 80%;
     margin: auto;
     outline: none;
-    background-color: lightblue;
+    background-color: var(--second-color);
     border: none;
-    padding: 2%;
+    padding: 10px;
     border-radius: 15px;
+    color: white;
 }
 
 header .searchbar button{
@@ -144,7 +144,7 @@ header .searchbar button{
 }
 
 header .searchbar button img{
-    width: 100%;
+    width: 90%;
 }
 
 header .menu{
@@ -175,11 +175,11 @@ header .menu img{
 body{
     padding: 0px;
     margin: 0px;
-    background-color: blue;
+    background-color: var(--main-bg-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .grid{
-    border: 1px solid red;
     display: block;
     text-align: center;
 }
