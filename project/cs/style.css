@@ -1,0 +1,164 @@
+main{
+    background-color: rgb(50, 50, 50);
+    height: 100%;
+}
+
+.product{
+    background-color: rgb(100, 100, 100);
+    width: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 3px;
+    color: white;
+    display: block;
+}
+
+.product p{
+    margin:3% 5%;
+}
+
+.product:hover{
+    background-color: rgba(255, 255, 255, 0.445);
+}
+
+.product img{
+    margin: 5% 0%;
+    width: 60%;
+    height: 60%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.product button{
+    border: none;
+    border-radius: 15px;
+    background-color: blue;
+    color: white;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 2%;
+}
+
+.product button:hover{
+    background-color: rgb(2, 2, 184);
+}
+
+.banner{
+    padding: 5% 0%;    
+}
+
+.banner img{
+    width: 95%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header{
+    display: inline-block;
+    background-color: blue;
+    width: 100%;
+}
+
+nav{
+    display: inline-block;
+    background-color: lightblue;
+    width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 1% 0%;
+    padding: 0;
+    width: 50%;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0% 2%;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: rgb(0, 12, 124);
+    font-weight: bolder;
+}
+
+header table{
+    width: 100%;
+}
+
+header td{
+    width: 34%;
+    margin: 5%;
+}
+
+header .logo{
+    width: 70%;
+    margin-left: 10%;
+}
+
+header .searchbar{
+    width: 50%;
+    display: inline;
+}
+
+header .searchbar input{
+    width: 80%;
+    margin: auto;
+    outline: none;
+    background-color: lightblue;
+    border: none;
+    padding: 2%;
+    border-radius: 15px;
+}
+
+header .searchbar button{
+    width: 10%;
+    outline: none;
+    border: none;
+    transform: translateY(25%);
+    background-color: transparent;
+}
+
+header .searchbar button img{
+    width: 100%;
+}
+
+header .menu{
+    display: block;
+    margin-right: 10%;
+}
+
+header .menu img{
+    width: 10%;
+    border-radius: 100%;
+    display: inline;
+    float: right;
+}
+
+header .menu a{
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: blue;
+}
+
+.grid{
+    display: inline;
+}
+
