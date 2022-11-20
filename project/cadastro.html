@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cs/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cadastro">
+
+        <h1>Cadastro</h1>
+        <form action="cadastraCliente.php" method="post" enctype="multipart/form-data">
+            <fieldset name="informacoespessoais">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required autofocus minlength="2" maxlength="50">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input class="isvalid" type="email" id="email" name="email" required><span></span>
+                </div>
+                <div>
+                    <label for="cpf">CPF</label>
+                    <input class="isvalid" type="text" id="cpf" name="cpf" required pattern="[0-9][0-9][0-9].[0-9][0-9][0-9].[0-9][0-9][0-9]-[0-9][0-9]" placeholder="xxx.xxx.xxx-xx"><span></span>
+                </div>
+                <div>
+                    <label for="idade">Idade</label>
+                    <input class="isvalid" type="number" id="idade" name="idade" min="0" required><span></span>
+                </div>
+                <div>
+                    <label for="telefone">Telefone</label>
+                    <input class="isvalid" type="tel" id="telefone" name="telefone" required><span></span>
+                </div>
+                <div>
+                    <label for="datadenascimento">Data de nascimento</label>
+                    <input type="date" id="datadenascimento" name="datadenascimento">
+                </div>
+                <div>
+                    <label for="sexo">Sexo:</label>
+                    <select name="sexo" id="sexo">
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                    </select>
+                </div>
+                
+            </fieldset>
+            <fieldset name="endereco de entrega">
+                <div>
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" name="cep" required>
+                </div>
+                <fieldset name="tipo de logradouro" class="logradouro">
+                    <p>Tipo de logradouro</p> <br>
+                    <input type="radio" id="rua" name="tipodelogradouro" value="rua" required="required" checked>
+                    <label for="rua">Rua</label> <br>
+                    <input type="radio" id="avenida" name="tipodelogradouro" value="avenida">
+                    <label for="avenida">Avenida</label> <br>
+                    <input type="radio" id="alameda" name="tipodelogradouro" value="alameda">
+                    <label for="alameda">Alameda</label> <br>
+                    <input type="radio" id="praca" name="tipodelogradouro" value="praca">
+                    <label for="praca">Praca</label> <br>
+                </fieldset>
+                <div>
+                    <label for="logradouro">Logradouro</label>
+                    <input type="text" id="logradouro" name="logradouro" required>
+                </div>
+                <div>
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" name="bairro" required>
+                </div>
+                <div>
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" name="cidade" required>
+                </div>
+                <div>
+                    <label for="estado">Estado</label>
+                    <input type="text" id="estado" name="estado" required>
+                </div>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
